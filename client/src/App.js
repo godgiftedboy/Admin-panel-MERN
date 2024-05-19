@@ -8,6 +8,8 @@ import { themeSettings } from "./theme";
 import Dashboard from "scenes/dashboard/index";
 import Layout from "scenes/layout/index";
 import Products from 'scenes/products/index'
+import Customers from 'scenes/customers/index'
+
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -24,6 +26,8 @@ function App() {
 
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/customers" element={<Customers />} />
+
 
 
 
